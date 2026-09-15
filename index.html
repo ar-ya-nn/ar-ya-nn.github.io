@@ -494,7 +494,6 @@ const ICONS = {
   })();
 
   const ch = (icon, label, value, href, external) => { const a = make("a", "channel", '<span class="ring">' + icon + '</span><span>' + label + '</span><small>' + value + '</small>', href); if (external) ext(a); $("channels").appendChild(a); };
-  if (PROFILE.email) ch(ICONS.mail, "Email", PROFILE.email, compose, true);
   if (PROFILE.phone) ch(ICONS.phone, "Phone", PROFILE.phone, "tel:" + PROFILE.phone.replace(/\s+/g, ""), false);
   if (PROFILE.linkedin) ch(ICONS.linkedin, "LinkedIn", "aryan-sahoo", PROFILE.linkedin, true);
   if (PROFILE.github) ch(ICONS.github, "GitHub", PROFILE.github.replace("https://github.com/", "@"), PROFILE.github, true);
